@@ -1,0 +1,28 @@
+---
+
+### 🔒 `.gitignore` Essentials
+
+```gitignore
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Data
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+
+# Logs and temp
+*.log
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Docker
+*.env
