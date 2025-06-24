@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
 from skimage import io
+from radial_entopy_sharpener import entropy_sharpen
 
 def launch_entropy_sharpen_UI(image, cluster_center):
     fig, ax = plt.subplots()

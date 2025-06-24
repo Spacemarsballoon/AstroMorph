@@ -1,13 +1,14 @@
 import numpy as np
-from skimage import filters, exposure, img_as_float
+from skimage import filters, exposure
+from skimage.util import img_as_float
 from scipy.ndimage import gaussian_filter, generic_filter
 from skimage.util import img_as_ubyte
+from skimage.filters.rank import entropy
+from skimage.morphology import disk
 
 
 def local_entropy(image, neighborhood=9):
     """Compute local entropy in a sliding window."""
-    from skimage.filters.rank import entropy
-    from skimage.morphology import disk
     ubyte_img = img_as_ubyte(image / image.max())
     return entropy(ubyte_img, disk(neighborhood))
 
