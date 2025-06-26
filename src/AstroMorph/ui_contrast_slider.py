@@ -49,5 +49,5 @@ def launch_entropy_sharpen_UI(image, cluster_center):
 
 
 if __name__=="__main__":
-    image = io.imread("C:/Users/Futurama/Documents/AstroMorph/AstroMorph/data/M51.jpg")
+    image = io.imread("C:/path/to/AstroMorph/AstroMorph/data/M51.jpg")
     launch_entropy_sharpen_UI(image,(image.shape[0] // 2, image.shape[1] // 2))
